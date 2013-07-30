@@ -7,6 +7,10 @@
 	.carousel_title
 		=image_tag "screen.png"
 		Electornics & Gadgets
+		.right
+			%button.btn.btn-small
+				See all products
+		.clear	
 	#carousel
 		= render :partial=>'item', :collection=> (1..8).to_a
 	%a{:class=>"prev", :id=>"foo2_prev", :href=>"#"}

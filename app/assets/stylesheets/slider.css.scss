@@ -122,6 +122,8 @@
 		}
 		a.prev {			left: 170px;
 							background: url('scroll-left.png') no-repeat transparent;}
+		a.prev:hover {background: url('scroll-left-over.png') no-repeat transparent;}					
+		a.next:hover {background: url('scroll-right-over.png') no-repeat transparent;}					
 		a.next {			right: 170px;}
 		a.prev.disabled, a.next.disabled {
 			cursor: default;
