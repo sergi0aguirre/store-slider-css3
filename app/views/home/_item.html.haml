@@ -1,7 +1,17 @@
 .item_container
-	=image_tag "photo_#{item}.png", :width=>'50px', :height=>'50px'
-	%b= "Item code 000#{item}"
-	%p
-		A concept that in many fields refers to a quantity without bound or end.
-	%span= "Price: #{number_to_currency(item*700)}"
-			
+	.white_tag
+		.special
+			Save
+			%br
+			= "% #{item*10}"
+	.inner		
+		=image_tag "medium_photo_#{item}.png"
+		.item_description
+			.title
+				= "Item code 000#{item}"
+			.name
+				Added 
+				= "#{item* 5} minutes ago"
+			.price
+				= "Price: #{number_to_currency(item*700)}"
+				

@@ -4,8 +4,11 @@
 %br
 %br
 #carousel_container
+	.carousel_title
+		=image_tag "screen.png"
+		Electornics & Gadgets
 	#carousel
-		= render :partial=>'item', :collection=> (1...5).to_a
+		= render :partial=>'item', :collection=> (1..8).to_a
 	%a{:class=>"prev", :id=>"foo2_prev", :href=>"#"}
 		%span 
 			prev	

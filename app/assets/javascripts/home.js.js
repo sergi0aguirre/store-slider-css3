@@ -3,7 +3,7 @@
 $(function() {
   return $("#carousel").carouFredSel({
     circular: false,
-    infinite: false,
+    infinite: true,
     auto: true,
     prev: {
       button: "#foo2_prev",
