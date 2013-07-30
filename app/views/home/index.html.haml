@@ -1,6 +1,16 @@
 %h2
 	Welcome
 
-.carousel
-	= render 'item', :collection=> 1...5
-	
+%br
+%br
+#carousel_container
+	#carousel
+		= render :partial=>'item', :collection=> (1...5).to_a
+	%a{:class=>"prev", :id=>"foo2_prev", :href=>"#"}
+		%span 
+			prev	
+	.clear
+	%a{:class=>"next", :id=>"foo2_next", :href=>"#"}
+		%span 
+			next
+
