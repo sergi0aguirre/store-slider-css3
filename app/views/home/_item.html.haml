@@ -5,7 +5,7 @@
 			%br
 			= "% #{item*10}"
 	.inner		
-		=image_tag "medium_photo_#{item}.png"
+		=image_tag "medium_photo_#{item}.png", :class=>:photo
 		.item_description
 			.title
 				= "Item code 000#{item}"
@@ -14,4 +14,7 @@
 				= "#{item* 5} minutes ago"
 			.price
 				= "Price: #{number_to_currency(item*700)}"
+				.right
+					%div.btn.btn-small
+						= image_tag 'star.png'
 				

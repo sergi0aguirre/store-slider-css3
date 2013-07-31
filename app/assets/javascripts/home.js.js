@@ -2,7 +2,7 @@
 
 $(function() {
   return $("#carousel").carouFredSel({
-    circular: false,
+    circular: true,
     infinite: true,
     auto: true,
     prev: {
@@ -14,7 +14,8 @@ $(function() {
       key: "right"
     },
     pagination: "#foo2_pag",
+    items: 4,
     height: 500,
-    width: 700
+    width: 840
   });
 });

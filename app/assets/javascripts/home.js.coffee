@@ -4,7 +4,7 @@
 
 $ ->
 	$("#carousel").carouFredSel({
-		circular: false,
+		circular: true,
 		infinite: true,
 		auto 	: true,
 		prev	: {	
@@ -16,6 +16,7 @@ $ ->
 			key		: "right"
 		},
 		pagination	: "#foo2_pag"
-		height : 500,
-		width  : 700
+		items   : 4,
+		height  : 500,
+		width   : 840
 	});
