@@ -8,6 +8,9 @@
 	margin:0 auto;
 
 
+	.tooltip {
+		font-size: 9px;
+	}
 
 	#carousel {
 		padding: 10px 10px 15px 10px;
@@ -45,6 +48,25 @@
 							margin: 0 auto;
 
 						}
+						.view_item{
+							-moz-box-shadow: 1px 1px 12px 1px #888;
+							-webkit-box-shadow: 1px 1px 12px 1px #888;
+							box-shadow: 1px 1px 12px 1px #888;
+							background-color: #5c2b9c;
+							position: fixed;
+							display: none;
+							visibility: hidden;
+							z-index: 100;
+							width: 66px;
+							height: 15px;
+							float: left;
+							top: 120px;
+							left: 45px;
+							padding: 0px 5px 5px;
+							color: white;
+							font-weight: bold;
+						}		
+
 					.item_description{
 						background-color: #544a4a;
 						color: white;
@@ -119,6 +141,10 @@
 		border: 3px solid #000 inset;
 
 			.inner{
+				.view_item{
+					display: block;
+					visibility:visible;
+				}
 				.item_description{
 					-moz-box-shadow: 2px 1px 7px 1px gray;
 	      			-webkit-box-shadow: 2px 1px 7px 1px gray;

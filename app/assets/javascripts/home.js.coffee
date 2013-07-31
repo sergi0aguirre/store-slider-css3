@@ -6,7 +6,7 @@ $ ->
 	$("#carousel").carouFredSel({
 		circular: true,
 		infinite: true,
-		auto 	: true,
+		auto 	: false,
 		prev	: {	
 			button	: "#foo2_prev",
 			key		: "left"
